@@ -1,0 +1,74 @@
+.fondo {
+  background-image: url(../img/Spider.jpeg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  filter: brightness(110%);
+}
+
+.contenedor-detalle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+}
+
+.contenedorImageD {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 4px solid #ba1d1d;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contenido {
+  flex: 1;
+  background-color:rgba(227, 232, 242, 0.618);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contenido h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #1a2c58f1;
+}
+
+.contenido h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1a2c58ea;
+}
+
+.contenido p {
+  margin-bottom: 10px;
+}
+
+.botonDescubrir {
+  padding: 10px 20px;
+  background-color: #e91c1c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.botonDescubrir:hover {
+  background-color: #c21807;
+}
+
+@media (max-width: 768px) {
+  .contenedor-detalle {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contenedorImageD {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
